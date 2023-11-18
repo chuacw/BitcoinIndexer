@@ -1,0 +1,9 @@
+{
+  "main": "index.js",
+  "name": "bitcoin_indexer",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node --no-warnings --experimental-vm-modules ../node_modules/jest/bin/jest.js --verbose"
+  }
+}
