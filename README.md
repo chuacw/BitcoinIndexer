@@ -1,4 +1,4 @@
-# Chee-Wee's Bitcoin project
+# Chee-Wee's Bitcoin Indexing project
 
 This is separated into 2 modules and a set of scripts:
 * Database scripts
