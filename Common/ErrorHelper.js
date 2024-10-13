@@ -1,3 +1,5 @@
+import { isArbitraryObject } from "delphirtl/sysutils";
+
 /* interface ErrnoException extends Error {
     errno?: number | undefined;
     code?: string | undefined;
@@ -5,11 +7,6 @@
     syscall?: string | undefined;
 }
  */
-/* type ArbitraryObject = { [key: string]: unknown; }; */
-
-function isArbitraryObject(potentialObject/* : unknown */)/* : potentialObject is ArbitraryObject */ {
-    return typeof potentialObject === "object" && potentialObject !== null;
-}
 
 function isErrnoException(error/* : unknown */)/* : error is ErrnoException */ {
     return isArbitraryObject(error) &&
@@ -20,4 +17,4 @@ function isErrnoException(error/* : unknown */)/* : error is ErrnoException */ {
         (typeof error.syscall === "string" || typeof error.syscall === "undefined");
 }
 
-export { isErrnoException, isArbitraryObject, /* ErrnoException */ }
+export { isErrnoException, /* ErrnoException */ }
